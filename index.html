@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Gabriel Silva Miranda</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Define a fonte padrão para todo o corpo do documento */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Adiciona transições suaves para a mudança de cor */
+        body, .bg-card {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+    <script>
+        // Configuração do Tailwind para o modo escuro
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200">
+
+    <div class="container mx-auto max-w-4xl p-4 sm:p-6 lg:p-8">
+        
+        <!-- Botão de Tema (Claro/Escuro) -->
+        <div class="flex justify-end mb-4">
+            <button id="theme-toggle" class="p-2 rounded-full text-slate-500 dark:text-yellow-300 hover:bg-gray-200 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <i data-lucide="sun" class="hidden dark:block"></i>
+                <i data-lucide="moon" class="block dark:hidden"></i>
+            </button>
+        </div>
+
+        <!-- Cabeçalho -->
+        <header class="flex flex-col sm:flex-row items-center mb-10">
+            <img src="https://placehold.co/128x128/6366f1/ffffff?text=GM" alt="Foto de Gabriel Miranda" class="w-32 h-32 rounded-full mb-4 sm:mb-0 sm:mr-8 border-4 border-white dark:border-slate-700 shadow-lg">
+            <div>
+                <h1 class="text-4xl font-bold text-indigo-600 dark:text-indigo-400">Gabriel Silva Miranda</h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400 mt-1">Desenvolvedor de Software em Formação</p>
+                <div class="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-500 dark:text-slate-400">
+                    <span class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>Salvador, BA</span>
+                    <span class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i>gabrielmastrillomiranda@gmail.com</span>
+                    <span class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>(71) 98391-9471</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Seção Sobre Mim -->
+        <main>
+            <section id="sobre" class="mb-10">
+                <h2 class="text-2xl font-bold border-b-2 border-indigo-500 pb-2 mb-4">Resumo Profissional</h2>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    Profissional de tecnologia em início de carreira, com experiência em manutenção de equipamentos e suporte técnico. Atualmente cursando Sistemas de Informação e com certificações em Cloud (AWS) e Cybersecurity (Cisco). Busco ativamente uma oportunidade de estágio ou júnior para aplicar e expandir meus conhecimentos em desenvolvimento de software, contribuindo para projetos inovadores.
+                </p>
+            </section>
+
+            <!-- Seção de Projetos (Aqui entrarão seus futuros projetos) -->
+            <section id="projetos" class="mb-10">
+                <h2 class="text-2xl font-bold border-b-2 border-indigo-500 pb-2 mb-4">Projetos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Projeto 1: API de Tarefas (Placeholder) -->
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md bg-card">
+                        <h3 class="font-bold text-lg text-indigo-600 dark:text-indigo-400">API REST para Lista de Tarefas</h3>
+                        <p class="text-sm mt-2 mb-4">Uma API para gerenciar tarefas (criar, ler, atualizar, deletar). O próximo passo da minha jornada de aprendizado.</p>
+                        <span class="inline-block bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python/Node.js</span>
+                        <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Em Breve</span>
+                    </div>
+                    <!-- Projeto 2: Script de Automação (Placeholder) -->
+                     <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md bg-card">
+                        <h3 class="font-bold text-lg text-indigo-600 dark:text-indigo-400">Script de Automação</h3>
+                        <p class="text-sm mt-2 mb-4">Um script para automatizar tarefas rotineiras, demonstrando habilidades de resolução de problemas práticos.</p>
+                        <span class="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Em Breve</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Experiência e Formação -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <section id="experiencia">
+                    <h2 class="text-2xl font-bold border-b-2 border-indigo-500 pb-2 mb-4">Experiência</h2>
+                    <div class="relative pl-6 border-l-2 border-gray-200 dark:border-slate-700">
+                        <!-- Item de Experiência 1 -->
+                        <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-2 mt-1.5"></div>
+                            <h3 class="font-bold text-lg">Ajudante de Escritório</h3>
+                            <p class="text-sm text-indigo-600 dark:text-indigo-400">LOGIN INFORMÁTICA | Jun 2022 – Jun 2024</p>
+                            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Diagnóstico, manutenção e reparo de hardware, suporte técnico e atendimento ao cliente.</p>
+                        </div>
+                        <!-- Item de Experiência 2 -->
+                        <div>
+                            <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-2 mt-1.5"></div>
+                            <h3 class="font-bold text-lg">Consultor de Energia Solar</h3>
+                            <p class="text-sm text-indigo-600 dark:text-indigo-400">LAYER SOLAR | Abr 2020 – Mar 2022</p>
+                            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Gestão de orçamentos, gestão de projetos e suporte técnico.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="formacao">
+                    <h2 class="text-2xl font-bold border-b-2 border-indigo-500 pb-2 mb-4">Formação e Certificados</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm bg-card">
+                            <h3 class="font-bold">Sistemas de Informação</h3>
+                            <p class="text-sm">UNIFACS (2023 – 2027)</p>
+                        </div>
+                         <div class="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm bg-card">
+                            <h3 class="font-bold">AWS Cloud Foundations</h3>
+                            <p class="text-sm">AWS Academy (2023)</p>
+                        </div>
+                         <div class="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm bg-card">
+                            <h3 class="font-bold">Cybersecurity Essentials</h3>
+                            <p class="text-sm">Cisco Networking Academy (2023)</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <!-- Rodapé com Links Sociais -->
+        <footer class="text-center mt-12 pt-6 border-t dark:border-slate-700">
+            <p class="text-sm text-slate-500 dark:text-slate-400">Conecte-se comigo:</p>
+            <div class="flex justify-center gap-6 mt-2">
+                <a href="#" class="text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                <a href="#" class="text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400"><i data-lucide="github" class="w-6 h-6"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Script para ativar os ícones do Lucide
+        lucide.createIcons();
+
+        // Script para o botão de toggle de tema
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
+
+        // Verifica o tema salvo no localStorage ou a preferência do sistema
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlEl.classList.add('dark');
+        } else {
+            htmlEl.classList.remove('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            // Alterna a classe 'dark' no elemento <html>
+            htmlEl.classList.toggle('dark');
+            
+            // Salva a preferência do usuário no localStorage
+            if (htmlEl.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+</body>
+</html>
